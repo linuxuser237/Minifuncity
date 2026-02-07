@@ -1,2 +1,2 @@
-# Minifuncity
-My website project =)
+# minifuncity
+My website project =) Visit it at minifuncity.netlify.app!
