@@ -1,9 +1,401 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
   background-color: white;
   color: black;
-  font-family: Verdana;
+}
+
+h1, h2 {
+  margin-top: 20px;
+}
+
+input, button {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+input {
+  padding: 10px 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* INDEX PAGE */
+#index-body {
+  background: linear-gradient(135deg, #f0f0f0, #ffe4e1);
+  padding: 50px;
+}
+
+#index-body h1 {
+  font-size: 3em;
+  color: #ff1493;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px #ffb6c1;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #ff85c1;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}
+
+/* CALCULATOR PAGE */
+#calculator-input {
+  font-size: 18px;
+  margin: 5px;
+}
+
+#calculator-button {
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px;
+}
+
+/* GUESS GAME PAGE */
+#game-input {
+  font-size: 18px;
+  margin: 5px;
+}
+
+#game-button {
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px;
+}
+
+/* COLOR GAME PAGE */
+#color-body {
+  background: #f0f8ff;
+  padding: 50px;
+}
+
+#colorBox {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  display: none;
+}
+
+#color-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #ff69b4;
+  color: white;
+}
+
+#color-button:hover {
+  background: #ff85c1;
+}
+
+/* MEMORY GAME PAGE */
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  margin: 5px;
+  background: #ff69b4;
+  cursor: pointer;
+  line-height: 70px;
+  color: #ff69b4;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.flipped {
+  color: black;
+  background: #f0f0f0;
+}
+
+/* TYPING TEST PAGE */
+#typing-body {
+  background: #f0fff0;
+  padding: 50px;
+}
+
+#sentence {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#typing-input {
+  font-size: 18px;
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+#typing-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #32cd32;
+  color: white;
+}
+
+#typing-button:hover {
+  background: #50e050;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* MAZE PAGE */
+#game {
+  display: grid;
+  grid-template-columns: repeat(25, 20px);
+  grid-template-rows: repeat(25, 20px);
+  gap: 2px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+}
+
+.wall {
+  background-color: #333;
+}
+
+.player {
+  background-color: #ff69b4;
+}
+
+.goal {
+  background-color: #4CAF50;
+}
+
+#playAgain {
+  display: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#playAgain:hover {
+  background-color: #ff85c1;
+}
+
+#stats {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* MATH PAGE */
+#math-body {
+  background: #f0f8ff;
+  padding: 50px;
+}
+
+#math-button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#question {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#answer {
+  font-size: 18px;
+  padding: 8px;
+}
+
+/* LANG-ARTS PAGE */
+#lang-body {
+  background: #fff8e6;
+  padding: 30px;
+  margin: 30px;
+}
+
+#lang-body h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 10px 20px;
+  margin: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.choice {
+  display: block;
+  width: 260px;
+  margin: 8px auto;
+  padding: 12px;
+  font-size: 17px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.choice:hover {
+  background: #f5f5f5;
+}
+
+#gameContainer {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+canvas {
+  background: #cdeaff;
+  border: 3px solid #333;
+  border-radius: 10px;
+}
+
+#mobileControls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arrowBtn {
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 0 5px #0003;
+  cursor: pointer;
+}
+
+#continueBtn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 18px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+/* LA-QUIZ PAGE */
+#quiz-body {
+  background: #fff8e6;
+  padding: 40px;
+}
+
+#quiz-body h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.quiz-choice {
+  display: block;
+  width: 280px;
+  margin: 10px auto;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.quiz-choice:hover {
+  background: #f5f5f5;
+}
+
+#finishBtn {
+  display: none;
+  margin-top: 25px;
+  padding: 12px 28px;
+  font-size: 18px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* RPS PAGE */
+#rps-button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
