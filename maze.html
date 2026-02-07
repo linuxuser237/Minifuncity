@@ -1,37 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Maze</title>
-    <style>
-        body { font-family: Arial; text-align: center; padding: 20px; }
-        #game {
-            display: grid;
-            grid-template-columns: repeat(25, 20px);
-            grid-template-rows: repeat(25, 20px);
-            gap: 2px;
-            justify-content: center;
-            margin: auto;
-            margin-top: 20px;
-        }
-        .cell { width: 20px; height: 20px; background-color: #eee; }
-        .wall { background-color: #333; }
-        .player { background-color: #ff69b4; }
-        .goal { background-color: #4CAF50; }
-        #playAgain {
-            display: none;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 8px;
-            background-color: #ff69b4;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        #playAgain:hover { background-color: #ff85c1; }
-        #stats { margin-top: 15px; font-size: 18px; }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1>Mini Maze!</h1>
