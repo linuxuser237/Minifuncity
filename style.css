@@ -42,15 +42,15 @@ button {
 
 /* INDEX PAGE */
 #index-body {
-  background: linear-gradient(135deg, #f0f0f0, #ffe4e1);
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   padding: 50px;
 }
 
 #index-body h1 {
   font-size: 3em;
-  color: #ff1493;
+  color: #0d47a1;
   margin-bottom: 40px;
-  text-shadow: 1px 1px #ffb6c1;
+  text-shadow: 1px 1px #64b5f6;
 }
 
 .button-container {
@@ -64,7 +64,7 @@ button {
   padding: 20px 40px;
   font-size: 20px;
   border-radius: 12px;
-  background-color: #ff69b4;
+  background-color: #1565c0;
   color: white;
   border: none;
   cursor: pointer;
@@ -75,7 +75,7 @@ button {
 }
 
 .nav-button:hover {
-  background-color: #ff85c1;
+  background-color: #42a5f5;
   transform: scale(1.1);
   box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
 }
